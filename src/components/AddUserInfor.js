@@ -1,10 +1,10 @@
 import React from "react";
 
-class UserInfor extends React.Component {
+class AddUserInfor extends React.Component {
     state = {
-        name: 'Eric',
+        name: '',
         address: 'Hoi Dan IT',
-        age: 26
+        age: ''
     };
 
     handleOnchangeInput = (event) => {
@@ -21,7 +21,11 @@ class UserInfor extends React.Component {
 
     handleOnSubmit = (event) => {
         event.preventDefault();
-        console.log(this.state)
+        this.props.handleAddNewUser({
+            id: Math.floor((Math.random() * 10) + 1) + '-random',
+            name: this.state.name,
+            age: this.state.age
+        })
     }
 
     render() {
@@ -49,4 +53,4 @@ class UserInfor extends React.Component {
     }
 }
 
-export default UserInfor;
+export default AddUserInfor;
