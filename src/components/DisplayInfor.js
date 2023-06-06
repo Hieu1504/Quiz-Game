@@ -1,4 +1,5 @@
 import React from "react";
+import './DisplayInfor.scss';
 
 class DisplayInfor extends React.Component {
     state = {
@@ -16,7 +17,7 @@ class DisplayInfor extends React.Component {
         //props => viết tắt của properties
         console.log(this.props)
         return (
-            <div>
+            <div className='display-infor-container'>
                 <div>
                     <span onClick={() => { this.handleShowHide() }}>
                         {this.state.isShowListUser === true ? "Hide List Users:" : "Show List Users:"}
@@ -27,7 +28,7 @@ class DisplayInfor extends React.Component {
                         {listUsers.map((user) => {
                             return (
                                 <div key={user.id} className={+user.age > 18 ? "green" : "red"}>
-                                    <div>My name's {user.name} </div>
+                                    <div style={{ color: 'yellow', paddingTop: '50px' }}>My name's {user.name} </div>
                                     <div>My age's {user.age} </div>
 
                                 </div>
