@@ -35,13 +35,11 @@ class MyComponent extends React.Component {
             <div>
                 <AddUserInfor
                     handleAddNewUser={this.handleAddNewUser}
-
                 />
                 <br /><br />
                 <DisplayInfor
                     listUsers={this.state.listUsers}
                 />
-                <hr />
             </div>
         );
     }
