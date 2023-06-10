@@ -41,7 +41,7 @@ const SideBar = (props) => {
                         }}
                     >
                         <DiReact size={'3em'} color={"00bfff"} />
-                        Hoi Dan IT
+                        Dash Board
                     </div>
                 </SidebarHeader>
 
@@ -84,7 +84,7 @@ const SideBar = (props) => {
                             rel="noopener noreferrer"
                         >
                             <span style={{ whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>
-                                &#169; Hỏi Dân IT Udemy
+                                &#169; Github ở đây 🙈
                             </span>
                         </a>
                     </div>
