@@ -4,7 +4,7 @@ import { FcPlus } from 'react-icons/fc';
 import TableUser from "./TableUser";
 import { useEffect } from "react";
 import { useState } from "react";
-import { getAllUserServices } from '../../../services/apiService';
+import { getAllUsers } from '../../../services/apiService';
 import ModalUpdateUser from "./ModalUpdateUser";
 import ModalViewUser from "./ModalViewUser";
 import ModalDeleteUser from "./ModalDeleteUser";
@@ -26,7 +26,7 @@ const ManageUser = (props) => {
     }, []);
 
     const fetchListUsers = async () => {
-        let res = await getAllUserServices()
+        let res = await getAllUsers()
         if (res.EC === 0) {
             setListUsers(res.DT)
         }
@@ -94,6 +94,7 @@ const ManageUser = (props) => {
                     show={showModalDeleteUser}
                     setShow={setShowModalDeleteUser}
                     dataDelete={dataDelete}
+                    fetchListUsers={fetchListUsers}
                 />
             </div>
         </div>
