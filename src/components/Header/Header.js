@@ -14,13 +14,13 @@ const Header = () => {
         <Navbar bg="light" expand="lg">
             <Container>
                 {/* <Navbar.Brand href="#home">Hỏi Dân IT</Navbar.Brand> */}
-                <NavLink to='/' className='navbar-brand'>Quiz Game</NavLink>
+                <NavLink to='/' className='navbar-brand fw-bold'>Quiz Game</NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <NavLink to='/' className='nav-link'>Home</NavLink>
-                        <NavLink to='/users' className='nav-link'>Users</NavLink>
-                        <NavLink to='/admins' className='nav-link'>Admin</NavLink>
+                        <NavLink to='/' className='nav-link fw-bold'>Home</NavLink>
+                        <NavLink to='/users' className='nav-link fw-bold'>Users</NavLink>
+                        <NavLink to='/admins' className='nav-link fw-bold'>Admin</NavLink>
                         {/* <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/users">Users</Nav.Link>
                         <Nav.Link href="/admins">Admin</Nav.Link> */}
