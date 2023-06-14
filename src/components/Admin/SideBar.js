@@ -14,10 +14,14 @@ import { DiReact } from "react-icons/di";
 import { MdDashboard } from "react-icons/md"
 import './SideBar.scss';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const SideBar = (props) => {
     const { image, collapsed, toggled, handleToggleSidebar } = props;
+    const navigate = useNavigate();
+
     return (
         <>
             <ProSidebar
@@ -41,7 +45,7 @@ const SideBar = (props) => {
                         }}
                     >
                         <DiReact size={'3em'} color={"00bfff"} />
-                        Dash Board
+                        <span onClick={() => navigate('/')}>Dash Board</span>
                     </div>
                 </SidebarHeader>
 
