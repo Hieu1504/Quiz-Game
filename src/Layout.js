@@ -8,10 +8,10 @@ import Admin from './components/Admin/Admin';
 import HomePage from './components/Home/HomePage';
 import ManageUser from './components/Admin/Content/ManageUser'
 import DashBoard from './components/Admin/Content/DashBoard';
-import Login from './components/auth/Login';
+import Login from './components/Auth/Login';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Register from './components/auth/Register';
+import Register from './components/Auth/Register';
 
 const Layout = (props) => {
     return (
